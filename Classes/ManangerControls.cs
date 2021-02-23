@@ -36,7 +36,6 @@ namespace Restaurant
             InitControl(OrderProfile, "OrderProfile");
             InitControl(WaiterList, "WaiterList");
             InitControl(WaiterProfile, "WaiterProfile");
-
             ShowControl("Home");
         }
 
