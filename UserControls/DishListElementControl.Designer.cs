@@ -34,6 +34,7 @@ namespace Restaurant
             this.ItemName = new System.Windows.Forms.Label();
             this.Id = new System.Windows.Forms.Label();
             this.Icon = new System.Windows.Forms.PictureBox();
+            this.Amount = new System.Windows.Forms.Label();
             this.Content.SuspendLayout();
             this.LeftDock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Icon)).BeginInit();
@@ -46,17 +47,18 @@ namespace Restaurant
             this.Content.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Content.Location = new System.Drawing.Point(0, 0);
             this.Content.Name = "Content";
-            this.Content.Size = new System.Drawing.Size(111, 121);
+            this.Content.Size = new System.Drawing.Size(111, 130);
             this.Content.TabIndex = 9;
             // 
             // LeftDock
             // 
+            this.LeftDock.Controls.Add(this.Amount);
             this.LeftDock.Controls.Add(this.ItemName);
             this.LeftDock.Controls.Add(this.Id);
             this.LeftDock.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LeftDock.Location = new System.Drawing.Point(0, 63);
             this.LeftDock.Name = "LeftDock";
-            this.LeftDock.Size = new System.Drawing.Size(111, 58);
+            this.LeftDock.Size = new System.Drawing.Size(111, 67);
             this.LeftDock.TabIndex = 4;
             // 
             // ItemName
@@ -66,7 +68,7 @@ namespace Restaurant
             this.ItemName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(81)))), ((int)(((byte)(120)))));
             this.ItemName.Location = new System.Drawing.Point(0, 23);
             this.ItemName.Name = "ItemName";
-            this.ItemName.Size = new System.Drawing.Size(111, 30);
+            this.ItemName.Size = new System.Drawing.Size(111, 21);
             this.ItemName.TabIndex = 5;
             this.ItemName.Text = "ItemName";
             // 
@@ -84,13 +86,24 @@ namespace Restaurant
             // Icon
             // 
             this.Icon.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Icon.Image = global::Restaurant.Properties.Resources.вш;
+            this.Icon.Image = global::Restaurant.Properties.Resources.DefaultDishIcon;
             this.Icon.Location = new System.Drawing.Point(0, 0);
             this.Icon.Name = "Icon";
             this.Icon.Size = new System.Drawing.Size(111, 63);
             this.Icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Icon.TabIndex = 0;
             this.Icon.TabStop = false;
+            // 
+            // Amount
+            // 
+            this.Amount.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Amount.Font = new System.Drawing.Font("Verdana", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Amount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(81)))), ((int)(((byte)(120)))));
+            this.Amount.Location = new System.Drawing.Point(0, 44);
+            this.Amount.Name = "Amount";
+            this.Amount.Size = new System.Drawing.Size(111, 21);
+            this.Amount.TabIndex = 6;
+            this.Amount.Text = "Amount";
             // 
             // DishListElementControl
             // 
@@ -100,7 +113,7 @@ namespace Restaurant
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.Content);
             this.Name = "DishListElementControl";
-            this.Size = new System.Drawing.Size(111, 121);
+            this.Size = new System.Drawing.Size(111, 130);
             this.Content.ResumeLayout(false);
             this.LeftDock.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Icon)).EndInit();
@@ -115,5 +128,6 @@ namespace Restaurant
         public System.Windows.Forms.Label ItemName;
         public System.Windows.Forms.Label Id;
         public System.Windows.Forms.PictureBox Icon;
+        public System.Windows.Forms.Label Amount;
     }
 }

@@ -49,11 +49,11 @@ namespace Restaurant
             this.PhotoContent = new System.Windows.Forms.PictureBox();
             this.SplitContent = new System.Windows.Forms.SplitContainer();
             this.DishBar = new System.Windows.Forms.Panel();
+            this.OpenDishContent = new System.Windows.Forms.Button();
             this.DeleteDishContent = new System.Windows.Forms.Button();
             this.AddDishContent = new System.Windows.Forms.Button();
             this.Splitter = new System.Windows.Forms.Panel();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.OpenDishContent = new System.Windows.Forms.Button();
             this.LeftDock.SuspendLayout();
             this.TopBar.SuspendLayout();
             this.PolyContent.SuspendLayout();
@@ -186,10 +186,10 @@ namespace Restaurant
             this.NameContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(81)))), ((int)(((byte)(120)))));
             this.NameContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NameContent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(202)))), ((int)(((byte)(214)))));
-            this.NameContent.Location = new System.Drawing.Point(164, 35);
+            this.NameContent.Location = new System.Drawing.Point(163, 35);
             this.NameContent.Name = "NameContent";
-            this.NameContent.Size = new System.Drawing.Size(259, 20);
-            this.NameContent.TabIndex = 44;
+            this.NameContent.Size = new System.Drawing.Size(256, 20);
+            this.NameContent.TabIndex = 2;
             // 
             // label1
             // 
@@ -199,7 +199,7 @@ namespace Restaurant
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(81)))), ((int)(((byte)(120)))));
             this.label1.Location = new System.Drawing.Point(4, 1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 30);
+            this.label1.Size = new System.Drawing.Size(152, 30);
             this.label1.TabIndex = 1;
             this.label1.Text = "Id";
             // 
@@ -209,10 +209,10 @@ namespace Restaurant
             this.IdContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.IdContent.Enabled = false;
             this.IdContent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(202)))), ((int)(((byte)(214)))));
-            this.IdContent.Location = new System.Drawing.Point(164, 4);
+            this.IdContent.Location = new System.Drawing.Point(163, 4);
             this.IdContent.Name = "IdContent";
-            this.IdContent.Size = new System.Drawing.Size(259, 20);
-            this.IdContent.TabIndex = 25;
+            this.IdContent.Size = new System.Drawing.Size(256, 20);
+            this.IdContent.TabIndex = 1;
             // 
             // label2
             // 
@@ -222,7 +222,7 @@ namespace Restaurant
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(81)))), ((int)(((byte)(120)))));
             this.label2.Location = new System.Drawing.Point(4, 32);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(153, 30);
+            this.label2.Size = new System.Drawing.Size(152, 30);
             this.label2.TabIndex = 26;
             this.label2.Text = "Имя";
             // 
@@ -234,7 +234,7 @@ namespace Restaurant
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(81)))), ((int)(((byte)(120)))));
             this.label3.Location = new System.Drawing.Point(4, 63);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(153, 30);
+            this.label3.Size = new System.Drawing.Size(152, 30);
             this.label3.TabIndex = 27;
             this.label3.Text = "Опубликация";
             // 
@@ -246,7 +246,7 @@ namespace Restaurant
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(81)))), ((int)(((byte)(120)))));
             this.label4.Location = new System.Drawing.Point(4, 94);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(153, 30);
+            this.label4.Size = new System.Drawing.Size(152, 30);
             this.label4.TabIndex = 28;
             this.label4.Text = "Действительна";
             // 
@@ -258,7 +258,7 @@ namespace Restaurant
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(81)))), ((int)(((byte)(120)))));
             this.label5.Location = new System.Drawing.Point(4, 125);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(153, 200);
+            this.label5.Size = new System.Drawing.Size(152, 200);
             this.label5.TabIndex = 29;
             this.label5.Text = "Бумажный вид";
             // 
@@ -267,11 +267,11 @@ namespace Restaurant
             this.PublishContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(81)))), ((int)(((byte)(120)))));
             this.PublishContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PublishContent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(202)))), ((int)(((byte)(214)))));
-            this.PublishContent.Location = new System.Drawing.Point(164, 66);
+            this.PublishContent.Location = new System.Drawing.Point(163, 66);
             this.PublishContent.Mask = "00/00/0000";
             this.PublishContent.Name = "PublishContent";
-            this.PublishContent.Size = new System.Drawing.Size(259, 20);
-            this.PublishContent.TabIndex = 42;
+            this.PublishContent.Size = new System.Drawing.Size(256, 20);
+            this.PublishContent.TabIndex = 3;
             this.PublishContent.ValidatingType = typeof(System.DateTime);
             // 
             // UnPublishContent
@@ -279,20 +279,20 @@ namespace Restaurant
             this.UnPublishContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(81)))), ((int)(((byte)(120)))));
             this.UnPublishContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.UnPublishContent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(202)))), ((int)(((byte)(214)))));
-            this.UnPublishContent.Location = new System.Drawing.Point(164, 97);
+            this.UnPublishContent.Location = new System.Drawing.Point(163, 97);
             this.UnPublishContent.Mask = "00/00/0000";
             this.UnPublishContent.Name = "UnPublishContent";
-            this.UnPublishContent.Size = new System.Drawing.Size(259, 20);
-            this.UnPublishContent.TabIndex = 41;
+            this.UnPublishContent.Size = new System.Drawing.Size(256, 20);
+            this.UnPublishContent.TabIndex = 4;
             this.UnPublishContent.ValidatingType = typeof(System.DateTime);
             // 
             // PhotoContent
             // 
             this.PhotoContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PhotoContent.Image = global::Restaurant.Properties.Resources.restaurant_menu;
-            this.PhotoContent.Location = new System.Drawing.Point(164, 128);
+            this.PhotoContent.Image = global::Restaurant.Properties.Resources.DefaultMenuIcon;
+            this.PhotoContent.Location = new System.Drawing.Point(163, 128);
             this.PhotoContent.Name = "PhotoContent";
-            this.PhotoContent.Size = new System.Drawing.Size(259, 194);
+            this.PhotoContent.Size = new System.Drawing.Size(256, 194);
             this.PhotoContent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PhotoContent.TabIndex = 43;
             this.PhotoContent.TabStop = false;
@@ -329,6 +329,21 @@ namespace Restaurant
             this.DishBar.Name = "DishBar";
             this.DishBar.Size = new System.Drawing.Size(433, 25);
             this.DishBar.TabIndex = 5;
+            // 
+            // OpenDishContent
+            // 
+            this.OpenDishContent.Dock = System.Windows.Forms.DockStyle.Left;
+            this.OpenDishContent.FlatAppearance.BorderSize = 0;
+            this.OpenDishContent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OpenDishContent.Font = new System.Drawing.Font("Yu Gothic", 11.25F);
+            this.OpenDishContent.ForeColor = System.Drawing.Color.Orange;
+            this.OpenDishContent.Location = new System.Drawing.Point(50, 0);
+            this.OpenDishContent.Name = "OpenDishContent";
+            this.OpenDishContent.Size = new System.Drawing.Size(25, 25);
+            this.OpenDishContent.TabIndex = 2;
+            this.OpenDishContent.Text = "📂";
+            this.OpenDishContent.UseVisualStyleBackColor = true;
+            this.OpenDishContent.Click += new System.EventHandler(this.OpenDishContent_Click);
             // 
             // DeleteDishContent
             // 
@@ -373,21 +388,6 @@ namespace Restaurant
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Filter = "jpg files (*.jpg)|*.jpg|png files (*.png)|*.png|jpeg files (*.jpeg)|*.jpeg";
-            // 
-            // OpenDishContent
-            // 
-            this.OpenDishContent.Dock = System.Windows.Forms.DockStyle.Left;
-            this.OpenDishContent.FlatAppearance.BorderSize = 0;
-            this.OpenDishContent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.OpenDishContent.Font = new System.Drawing.Font("Yu Gothic", 11.25F);
-            this.OpenDishContent.ForeColor = System.Drawing.Color.Orange;
-            this.OpenDishContent.Location = new System.Drawing.Point(50, 0);
-            this.OpenDishContent.Name = "OpenDishContent";
-            this.OpenDishContent.Size = new System.Drawing.Size(25, 25);
-            this.OpenDishContent.TabIndex = 2;
-            this.OpenDishContent.Text = "📂";
-            this.OpenDishContent.UseVisualStyleBackColor = true;
-            this.OpenDishContent.Click += new System.EventHandler(this.OpenDishContent_Click);
             // 
             // MenuListControl
             // 

@@ -223,7 +223,7 @@ namespace Restaurant
             this.TipsContent.Name = "TipsContent";
             this.TipsContent.ReadOnly = true;
             this.TipsContent.Size = new System.Drawing.Size(280, 27);
-            this.TipsContent.TabIndex = 39;
+            this.TipsContent.TabIndex = 10;
             // 
             // WageContent
             // 
@@ -237,9 +237,8 @@ namespace Restaurant
             0,
             0});
             this.WageContent.Name = "WageContent";
-            this.WageContent.ReadOnly = true;
             this.WageContent.Size = new System.Drawing.Size(280, 27);
-            this.WageContent.TabIndex = 38;
+            this.WageContent.TabIndex = 9;
             // 
             // OldContent
             // 
@@ -254,7 +253,7 @@ namespace Restaurant
             0});
             this.OldContent.Name = "OldContent";
             this.OldContent.Size = new System.Drawing.Size(280, 27);
-            this.OldContent.TabIndex = 37;
+            this.OldContent.TabIndex = 8;
             // 
             // Patronymic
             // 
@@ -264,7 +263,7 @@ namespace Restaurant
             this.Patronymic.Location = new System.Drawing.Point(117, 170);
             this.Patronymic.Name = "Patronymic";
             this.Patronymic.Size = new System.Drawing.Size(280, 27);
-            this.Patronymic.TabIndex = 28;
+            this.Patronymic.TabIndex = 5;
             // 
             // FirstNameContent
             // 
@@ -274,7 +273,7 @@ namespace Restaurant
             this.FirstNameContent.Location = new System.Drawing.Point(117, 139);
             this.FirstNameContent.Name = "FirstNameContent";
             this.FirstNameContent.Size = new System.Drawing.Size(280, 27);
-            this.FirstNameContent.TabIndex = 27;
+            this.FirstNameContent.TabIndex = 4;
             // 
             // LastNameContent
             // 
@@ -284,7 +283,7 @@ namespace Restaurant
             this.LastNameContent.Location = new System.Drawing.Point(117, 108);
             this.LastNameContent.Name = "LastNameContent";
             this.LastNameContent.Size = new System.Drawing.Size(280, 27);
-            this.LastNameContent.TabIndex = 26;
+            this.LastNameContent.TabIndex = 3;
             // 
             // label21
             // 
@@ -396,7 +395,7 @@ namespace Restaurant
             this.SexContent.Location = new System.Drawing.Point(117, 201);
             this.SexContent.Name = "SexContent";
             this.SexContent.Size = new System.Drawing.Size(280, 26);
-            this.SexContent.TabIndex = 34;
+            this.SexContent.TabIndex = 7;
             // 
             // CurrentWageContent
             // 
@@ -410,8 +409,9 @@ namespace Restaurant
             0,
             0});
             this.CurrentWageContent.Name = "CurrentWageContent";
+            this.CurrentWageContent.ReadOnly = true;
             this.CurrentWageContent.Size = new System.Drawing.Size(280, 27);
-            this.CurrentWageContent.TabIndex = 36;
+            this.CurrentWageContent.TabIndex = 11;
             // 
             // tableLayoutPanel1
             // 
@@ -453,7 +453,7 @@ namespace Restaurant
             this.IdContent.Location = new System.Drawing.Point(82, 4);
             this.IdContent.Name = "IdContent";
             this.IdContent.Size = new System.Drawing.Size(194, 27);
-            this.IdContent.TabIndex = 25;
+            this.IdContent.TabIndex = 1;
             // 
             // label1
             // 
@@ -476,13 +476,13 @@ namespace Restaurant
             this.PostContent.Location = new System.Drawing.Point(82, 35);
             this.PostContent.Name = "PostContent";
             this.PostContent.Size = new System.Drawing.Size(194, 58);
-            this.PostContent.TabIndex = 27;
+            this.PostContent.TabIndex = 2;
             this.PostContent.Text = "";
             // 
             // PhotoContent
             // 
             this.PhotoContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PhotoContent.Image = global::Restaurant.Properties.Resources.images;
+            this.PhotoContent.Image = global::Restaurant.Properties.Resources.DefaultWaiterIcon;
             this.PhotoContent.Location = new System.Drawing.Point(4, 4);
             this.PhotoContent.Name = "PhotoContent";
             this.PhotoContent.Size = new System.Drawing.Size(106, 97);
@@ -500,7 +500,7 @@ namespace Restaurant
             this.ShecludeContent.Location = new System.Drawing.Point(117, 356);
             this.ShecludeContent.Name = "ShecludeContent";
             this.ShecludeContent.Size = new System.Drawing.Size(280, 50);
-            this.ShecludeContent.TabIndex = 43;
+            this.ShecludeContent.TabIndex = 12;
             this.ShecludeContent.Text = "";
             // 
             // label3

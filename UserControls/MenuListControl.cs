@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Restaurant
@@ -53,7 +50,7 @@ namespace Restaurant
 
                         if (selectedDish.Length > 0)
                             foreach (Dish dish in selectedDish)
-                                DishList.Controls.Add(new DishListElementControl(dish.Id.ToString(), dish.Title, dish.Picture , SelectedClickDish));
+                                DishList.Controls.Add(new DishListElementControl(dish.Id.ToString(), dish.Title, dish.AmountSales.ToString(), dish.Picture, SelectedClickDish));
                         break;
                     }
             }
@@ -65,7 +62,7 @@ namespace Restaurant
             NameContent.Text = "";
             PublishContent.Text = "";
             UnPublishContent.Text = "";
-            PhotoContent.Image = Properties.Resources.restaurant_menu;
+            PhotoContent.Image = Properties.Resources.DefaultMenuIcon;
             DishList.Controls.Clear();
         }
 

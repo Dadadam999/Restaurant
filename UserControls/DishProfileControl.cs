@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Restaurant
@@ -16,7 +10,6 @@ namespace Restaurant
         public DishProfileControl()
         {
             InitializeComponent();
-            
         }
 
         public void SetDish(Dish element)
@@ -50,17 +43,17 @@ namespace Restaurant
             AmountContent.Value = 0;
             SaleContent.Value = 0;
             CurrentAmountContent.Value = 0;
-            PhotoContent.Image = Properties.Resources.restaurant_menu;
+            PhotoContent.Image = Properties.Resources.DefaultMenuIcon;
         }
 
         private void SaveContent_Click(object sender, EventArgs e)
         {
-             _dish.Title = TitleContent.Text;
-             _dish.Description = DescriptionContent.Text;
-             _dish.Quality = Convert.ToInt32(QualityContent.Value);
-             _dish.Amount = AmountContent.Value;
-             _dish.Sales = SaleContent.Value; 
-             _dish.Picture = new Bitmap(PhotoContent.Image);
+            _dish.Title = TitleContent.Text;
+            _dish.Description = DescriptionContent.Text;
+            _dish.Quality = Convert.ToInt32(QualityContent.Value);
+            _dish.Amount = AmountContent.Value;
+            _dish.Sales = SaleContent.Value;
+            _dish.Picture = new Bitmap(PhotoContent.Image);
             DataSet.SaveToFile();
             ManangerControls.MenuList.UpdateContent();
             ManangerControls.ShowControl("MenuList");

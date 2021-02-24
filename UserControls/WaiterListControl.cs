@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Restaurant
@@ -26,7 +23,7 @@ namespace Restaurant
             ListPanel.Controls.Clear();
             if (_waiters.Count > 0)
                 foreach (Waiter waiter in _waiters)
-                    ListPanel.Controls.Add(new HumanListElementControl(waiter.Id.ToString(), waiter.FrirstName, waiter.LastName, SelectedClick));
+                    ListPanel.Controls.Add(new HumanListElementControl(waiter.Id.ToString(), waiter.FrirstName, waiter.LastName, waiter.Photo, SelectedClick));
         }
 
         private void PhotoContent_DoubleClick(object sender, EventArgs e)
@@ -65,7 +62,6 @@ namespace Restaurant
                                               select order.Id.ToString()
                                              ).ToArray();
 
-
                         if (selectedOrders.Length > 0)
                             OrderList.Items.AddRange(selectedOrders);
 
@@ -76,7 +72,7 @@ namespace Restaurant
 
         public void ClearContent()
         {
-            PhotoContent.Image = Properties.Resources.images;
+            PhotoContent.Image = Properties.Resources.DefaultWaiterIcon;
             IdContent.Text = "";
             PostContent.Text = "";
             LastNameContent.Text = "";
@@ -106,7 +102,6 @@ namespace Restaurant
                         _waiters[i].Sex = SexContent.Text;
                         _waiters[i].Old = Convert.ToInt32(OldContent.Value);
                         _waiters[i].StaticWage = WageContent.Value;
-                        _waiters[i].Tips = TipsContent.Value;
                         _waiters[i].Sheclude = ShecludeContent.Text;
                         break;
                     }
@@ -114,7 +109,7 @@ namespace Restaurant
                 foreach (HumanListElementControl element in ListPanel.Controls)
                     if (element.Icon.Tag.ToString() == _selectedId)
                     {
-                        element.UpdateElement(IdContent.Text, Patronymic.Text, FirstNameContent.Text);
+                        element.UpdateElement(IdContent.Text, Patronymic.Text, FirstNameContent.Text, PhotoContent.Image);
                         break;
                     }
 
@@ -136,19 +131,19 @@ namespace Restaurant
 
         private void AddContent_Click(object sender, EventArgs e)
         {
-           _waiters.Add(new Waiter());
+            _waiters.Add(new Waiter());
             DataSet.SaveToFile();
             UpdateList();
         }
 
         private void DeleteContent_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(_selectedId) &&_waiters.Count > 0)
+            if (!string.IsNullOrEmpty(_selectedId) && _waiters.Count > 0)
             {
                 for (int i = 0; i < _waiters.Count; i++)
                     if (_waiters[i].Id.ToString() == _selectedId)
                     {
-                       _waiters.Remove(_waiters[i]);
+                        _waiters.Remove(_waiters[i]);
                         break;
                     }
                 DataSet.SaveToFile();

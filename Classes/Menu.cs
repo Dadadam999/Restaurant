@@ -14,7 +14,7 @@ namespace Restaurant
         public string Name { get; set; }
         public string PublishDate { get; set; }
         public string UnPublichhDate { get; set; }
-        public Bitmap Photo { get; set; } = Properties.Resources.restaurant_menu;
+        public Bitmap Photo { get; set; } = Properties.Resources.DefaultMenuIcon;
 
         public Menu()
         {

@@ -161,7 +161,7 @@ namespace Restaurant
             // Logo
             // 
             this.Logo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Logo.Image = global::Restaurant.Properties.Resources.Oe1B;
+            this.Logo.Image = global::Restaurant.Properties.Resources.Logo;
             this.Logo.Location = new System.Drawing.Point(0, 0);
             this.Logo.Name = "Logo";
             this.Logo.Size = new System.Drawing.Size(167, 71);

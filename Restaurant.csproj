@@ -51,6 +51,11 @@
     <Compile Include="Classes\Dish.cs" />
     <Compile Include="Classes\DataSet.cs" />
     <Compile Include="Classes\DataBase.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\DishListElementControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -82,35 +87,17 @@
     <Compile Include="UserControls\MenuListControl.Designer.cs">
       <DependentUpon>MenuListControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\MenuProfileControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\MenuProfileControl.Designer.cs">
-      <DependentUpon>MenuProfileControl.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\OrderListControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\OrderListControl.Designer.cs">
       <DependentUpon>OrderListControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\OrderProfileControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\OrderProfileControl.Designer.cs">
-      <DependentUpon>OrderProfileControl.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\ClientListControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\ClientListControl.Designer.cs">
       <DependentUpon>ClientListControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\ClientProfileControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\ClientProfileControl.Designer.cs">
-      <DependentUpon>ClientProfileControl.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\HomeControl.cs">
       <SubType>UserControl</SubType>
@@ -135,12 +122,6 @@
     <Compile Include="UserControls\WaiterListControl.Designer.cs">
       <DependentUpon>WaiterListControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\WaiterProfileControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\WaiterProfileControl.Designer.cs">
-      <DependentUpon>WaiterProfileControl.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="UserControls\DishListElementControl.resx">
       <DependentUpon>DishListElementControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,9 +134,6 @@
     <EmbeddedResource Include="UserControls\HumanListElementControl.resx">
       <DependentUpon>HumanListElementControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\ClientProfileControl.resx">
-      <DependentUpon>ClientProfileControl.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\DishProfileControl.resx">
       <DependentUpon>DishProfileControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,31 +145,17 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="UserControls\MenuListControl.resx">
       <DependentUpon>MenuListControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\MenuProfileControl.resx">
-      <DependentUpon>MenuProfileControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\OrderListControl.resx">
       <DependentUpon>OrderListControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\OrderProfileControl.resx">
-      <DependentUpon>OrderProfileControl.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\WaiterListControl.resx">
       <DependentUpon>WaiterListControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\WaiterProfileControl.resx">
-      <DependentUpon>WaiterProfileControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -207,22 +171,22 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Oe1B.gif" />
+    <None Include="Resources\Logo.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\User_icon-cp.png" />
+    <None Include="Resources\DefaultClientIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\images.png" />
+    <None Include="Resources\DefaultWaiterIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\w512h5121371227745posteditem.png" />
+    <None Include="Resources\DefaultItemIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\вш.png" />
+    <None Include="Resources\DefaultDishIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\restaurant-menu.png" />
+    <None Include="Resources\DefaultMenuIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

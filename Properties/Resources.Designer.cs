@@ -63,9 +63,9 @@ namespace Restaurant.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap images {
+        internal static System.Drawing.Bitmap DefaultClientIcon {
             get {
-                object obj = ResourceManager.GetObject("images", resourceCulture);
+                object obj = ResourceManager.GetObject("DefaultClientIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Restaurant.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Oe1B {
+        internal static System.Drawing.Bitmap DefaultDishIcon {
             get {
-                object obj = ResourceManager.GetObject("Oe1B", resourceCulture);
+                object obj = ResourceManager.GetObject("DefaultDishIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace Restaurant.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap restaurant_menu {
+        internal static System.Drawing.Bitmap DefaultItemIcon {
             get {
-                object obj = ResourceManager.GetObject("restaurant-menu", resourceCulture);
+                object obj = ResourceManager.GetObject("DefaultItemIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace Restaurant.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap User_icon_cp {
+        internal static System.Drawing.Bitmap DefaultMenuIcon {
             get {
-                object obj = ResourceManager.GetObject("User_icon-cp", resourceCulture);
+                object obj = ResourceManager.GetObject("DefaultMenuIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace Restaurant.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap w512h5121371227745posteditem {
+        internal static System.Drawing.Bitmap DefaultWaiterIcon {
             get {
-                object obj = ResourceManager.GetObject("w512h5121371227745posteditem", resourceCulture);
+                object obj = ResourceManager.GetObject("DefaultWaiterIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace Restaurant.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap вш {
+        internal static System.Drawing.Bitmap Logo {
             get {
-                object obj = ResourceManager.GetObject("вш", resourceCulture);
+                object obj = ResourceManager.GetObject("Logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

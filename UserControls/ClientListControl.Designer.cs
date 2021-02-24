@@ -263,7 +263,7 @@ namespace Restaurant
             0});
             this.SalesContent.Name = "SalesContent";
             this.SalesContent.Size = new System.Drawing.Size(178, 27);
-            this.SalesContent.TabIndex = 39;
+            this.SalesContent.TabIndex = 9;
             // 
             // CostMounthContent
             // 
@@ -277,8 +277,9 @@ namespace Restaurant
             0,
             0});
             this.CostMounthContent.Name = "CostMounthContent";
+            this.CostMounthContent.ReadOnly = true;
             this.CostMounthContent.Size = new System.Drawing.Size(178, 27);
-            this.CostMounthContent.TabIndex = 38;
+            this.CostMounthContent.TabIndex = 8;
             // 
             // CostAllContent
             // 
@@ -292,8 +293,9 @@ namespace Restaurant
             0,
             0});
             this.CostAllContent.Name = "CostAllContent";
+            this.CostAllContent.ReadOnly = true;
             this.CostAllContent.Size = new System.Drawing.Size(178, 27);
-            this.CostAllContent.TabIndex = 37;
+            this.CostAllContent.TabIndex = 7;
             // 
             // TypeContent
             // 
@@ -308,7 +310,7 @@ namespace Restaurant
             this.TypeContent.Location = new System.Drawing.Point(189, 35);
             this.TypeContent.Name = "TypeContent";
             this.TypeContent.Size = new System.Drawing.Size(178, 26);
-            this.TypeContent.TabIndex = 35;
+            this.TypeContent.TabIndex = 2;
             // 
             // FirstNameContent
             // 
@@ -318,7 +320,7 @@ namespace Restaurant
             this.FirstNameContent.Location = new System.Drawing.Point(189, 128);
             this.FirstNameContent.Name = "FirstNameContent";
             this.FirstNameContent.Size = new System.Drawing.Size(178, 27);
-            this.FirstNameContent.TabIndex = 28;
+            this.FirstNameContent.TabIndex = 5;
             // 
             // LastNameContent
             // 
@@ -328,7 +330,7 @@ namespace Restaurant
             this.LastNameContent.Location = new System.Drawing.Point(189, 97);
             this.LastNameContent.Name = "LastNameContent";
             this.LastNameContent.Size = new System.Drawing.Size(178, 27);
-            this.LastNameContent.TabIndex = 27;
+            this.LastNameContent.TabIndex = 4;
             // 
             // UtmContent
             // 
@@ -338,7 +340,7 @@ namespace Restaurant
             this.UtmContent.Location = new System.Drawing.Point(189, 66);
             this.UtmContent.Name = "UtmContent";
             this.UtmContent.Size = new System.Drawing.Size(178, 27);
-            this.UtmContent.TabIndex = 26;
+            this.UtmContent.TabIndex = 3;
             // 
             // IdContent
             // 
@@ -349,7 +351,7 @@ namespace Restaurant
             this.IdContent.Location = new System.Drawing.Point(189, 4);
             this.IdContent.Name = "IdContent";
             this.IdContent.Size = new System.Drawing.Size(178, 27);
-            this.IdContent.TabIndex = 24;
+            this.IdContent.TabIndex = 1;
             // 
             // SexContent
             // 
@@ -365,7 +367,7 @@ namespace Restaurant
             this.SexContent.Location = new System.Drawing.Point(189, 159);
             this.SexContent.Name = "SexContent";
             this.SexContent.Size = new System.Drawing.Size(178, 26);
-            this.SexContent.TabIndex = 34;
+            this.SexContent.TabIndex = 6;
             // 
             // VisitCountContent
             // 
@@ -381,7 +383,7 @@ namespace Restaurant
             this.VisitCountContent.Name = "VisitCountContent";
             this.VisitCountContent.ReadOnly = true;
             this.VisitCountContent.Size = new System.Drawing.Size(178, 27);
-            this.VisitCountContent.TabIndex = 36;
+            this.VisitCountContent.TabIndex = 10;
             // 
             // LastVisitContent
             // 
@@ -392,7 +394,7 @@ namespace Restaurant
             this.LastVisitContent.Mask = "00/00/0000";
             this.LastVisitContent.Name = "LastVisitContent";
             this.LastVisitContent.Size = new System.Drawing.Size(178, 27);
-            this.LastVisitContent.TabIndex = 40;
+            this.LastVisitContent.TabIndex = 11;
             this.LastVisitContent.ValidatingType = typeof(System.DateTime);
             // 
             // LeftDock

@@ -15,7 +15,7 @@ namespace Restaurant
         public string Title { get; set; }
         public string Description { get; set; }
         public int Quality { get; set; }
-        public Bitmap Picture { get; set; } = Properties.Resources.вш;
+        public Bitmap Picture { get; set; } = Properties.Resources.DefaultDishIcon;
         public Decimal Amount { get; set; } = 0;
         public Decimal Sales { get; set; } = 0;
         public Decimal AmountSales { get { return ((Amount - Sales) < 0) ? 0 : Amount - Sales; } }

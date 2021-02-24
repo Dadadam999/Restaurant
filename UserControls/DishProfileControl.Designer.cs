@@ -138,7 +138,7 @@ namespace Restaurant
             this.CurrentAmountContent.Name = "CurrentAmountContent";
             this.CurrentAmountContent.ReadOnly = true;
             this.CurrentAmountContent.Size = new System.Drawing.Size(333, 20);
-            this.CurrentAmountContent.TabIndex = 58;
+            this.CurrentAmountContent.TabIndex = 8;
             // 
             // SaleContent
             // 
@@ -153,7 +153,7 @@ namespace Restaurant
             0});
             this.SaleContent.Name = "SaleContent";
             this.SaleContent.Size = new System.Drawing.Size(333, 20);
-            this.SaleContent.TabIndex = 57;
+            this.SaleContent.TabIndex = 7;
             // 
             // AmountContent
             // 
@@ -168,7 +168,7 @@ namespace Restaurant
             0});
             this.AmountContent.Name = "AmountContent";
             this.AmountContent.Size = new System.Drawing.Size(333, 20);
-            this.AmountContent.TabIndex = 56;
+            this.AmountContent.TabIndex = 6;
             // 
             // QualityContent
             // 
@@ -183,7 +183,7 @@ namespace Restaurant
             0});
             this.QualityContent.Name = "QualityContent";
             this.QualityContent.Size = new System.Drawing.Size(333, 20);
-            this.QualityContent.TabIndex = 55;
+            this.QualityContent.TabIndex = 5;
             // 
             // DescriptionContent
             // 
@@ -194,7 +194,7 @@ namespace Restaurant
             this.DescriptionContent.Location = new System.Drawing.Point(209, 97);
             this.DescriptionContent.Name = "DescriptionContent";
             this.DescriptionContent.Size = new System.Drawing.Size(333, 44);
-            this.DescriptionContent.TabIndex = 54;
+            this.DescriptionContent.TabIndex = 4;
             this.DescriptionContent.Text = "";
             // 
             // MenuIdContent
@@ -206,7 +206,7 @@ namespace Restaurant
             this.MenuIdContent.Location = new System.Drawing.Point(209, 35);
             this.MenuIdContent.Name = "MenuIdContent";
             this.MenuIdContent.Size = new System.Drawing.Size(333, 20);
-            this.MenuIdContent.TabIndex = 44;
+            this.MenuIdContent.TabIndex = 2;
             // 
             // label1
             // 
@@ -230,7 +230,7 @@ namespace Restaurant
             this.IdContent.Location = new System.Drawing.Point(209, 4);
             this.IdContent.Name = "IdContent";
             this.IdContent.Size = new System.Drawing.Size(333, 20);
-            this.IdContent.TabIndex = 25;
+            this.IdContent.TabIndex = 1;
             // 
             // label2
             // 
@@ -331,12 +331,12 @@ namespace Restaurant
             this.TitleContent.Location = new System.Drawing.Point(209, 66);
             this.TitleContent.Name = "TitleContent";
             this.TitleContent.Size = new System.Drawing.Size(333, 20);
-            this.TitleContent.TabIndex = 53;
+            this.TitleContent.TabIndex = 3;
             // 
             // PhotoContent
             // 
             this.PhotoContent.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.PhotoContent.Image = global::Restaurant.Properties.Resources.вш;
+            this.PhotoContent.Image = global::Restaurant.Properties.Resources.DefaultDishIcon;
             this.PhotoContent.Location = new System.Drawing.Point(0, 388);
             this.PhotoContent.Name = "PhotoContent";
             this.PhotoContent.Size = new System.Drawing.Size(546, 151);

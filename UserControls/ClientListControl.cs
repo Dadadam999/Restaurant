@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Restaurant
@@ -26,7 +21,7 @@ namespace Restaurant
             ListPanel.Controls.Clear();
             if (_clients.Count > 0)
                 foreach (Client client in _clients)
-                    ListPanel.Controls.Add(new HumanListElementControl(client.Id.ToString(), client.FrirstName, client.LastName, SelectedClick));
+                    ListPanel.Controls.Add(new HumanListElementControl(client.Id.ToString(), client.FrirstName, client.LastName, Properties.Resources.DefaultClientIcon, SelectedClick));
         }
 
         public void UpdateContent()
@@ -115,10 +110,7 @@ namespace Restaurant
                         _clients[i].FrirstName = FirstNameContent.Text;
                         _clients[i].LastName = LastNameContent.Text;
                         _clients[i].Sex = SexContent.Text;
-                        _clients[i].CostAll = CostAllContent.Value;
-                        _clients[i].CostMounth = CostMounthContent.Value;
                         _clients[i].Sales = SalesContent.Value;
-                        _clients[i].VisitCount = Convert.ToInt32(VisitCountContent.Value);
                         _clients[i].LastVisit = FixDate(LastVisitContent.Text);
                         break;
                     }
@@ -126,7 +118,7 @@ namespace Restaurant
                 foreach (HumanListElementControl element in ListPanel.Controls)
                     if (element.Icon.Tag.ToString() == _selectedId)
                     {
-                        element.UpdateElement(IdContent.Text, FirstNameContent.Text, LastNameContent.Text);
+                        element.UpdateElement(IdContent.Text, FirstNameContent.Text, LastNameContent.Text, Properties.Resources.DefaultClientIcon);
                         break;
                     }
 

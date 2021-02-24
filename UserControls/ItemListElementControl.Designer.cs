@@ -85,7 +85,7 @@ namespace Restaurant
             // Icon
             // 
             this.Icon.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Icon.Image = global::Restaurant.Properties.Resources.w512h5121371227745posteditem;
+            this.Icon.Image = global::Restaurant.Properties.Resources.DefaultItemIcon;
             this.Icon.Location = new System.Drawing.Point(0, 0);
             this.Icon.Name = "Icon";
             this.Icon.Size = new System.Drawing.Size(36, 75);
