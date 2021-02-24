@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>User_icon-cp.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -187,6 +190,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\DefaultMenuIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="User_icon-cp.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
